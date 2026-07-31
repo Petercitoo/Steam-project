@@ -37,8 +37,6 @@ while True:
                     progress_string = json.dumps({"appid": current["appid"],"percentage": percentage, "remaining": remaining, "eta_seconds": eta_seconds})
                     f.write(progress_string)
         last_reading = (current,now)
-        print("bd=", current["bd"])
-        print("Hola")
     time.sleep(1)
 
 
